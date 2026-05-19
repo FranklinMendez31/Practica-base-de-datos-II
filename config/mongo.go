@@ -15,7 +15,7 @@ func Connect() error {
 	ctx, cancel := context.WithTimeout(context.Background(), 10*time.Second)
 	defer cancel()
 
-	clientOptions := options.Client().ApplyURI("mongodb+srv://admin:TvJtgWL0ofSUpBCV@cluster0.vp2nhjw.mongodb.net/?appName=Cluster0")
+	clientOptions := options.Client().ApplyURI("mongodb+srv://01240918049078h_db_user:vDUPFBuixtkYaBOnk7e@cluster0.ehjsk7e.mongodb.net/?appName=Cluster0")
 
 	client, err := mongo.Connect(ctx, clientOptions)
 	if err != nil {

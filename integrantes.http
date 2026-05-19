@@ -1,5 +1,5 @@
 ##Crear Integrante
-curl -X POST http://api-mongo-go-production.up.railway.app/integrantes \
+curl -X POST http://practica-base-de-datos-ii-production.up.railway.app/integrantes \
   -H "Content-Type: application/json" \
   -d '{
     "id_integrante_liga": "juan123",
@@ -17,7 +17,7 @@ curl http://localhost:8080/integrantes
 
 
 ##Login Integrante
-curl -X POST https://api-mongo-go-production.up.railway.app/integrantes/login \
+curl -X POST https://practica-base-de-datos-ii-production.up.railway.app/integrantes/login \
   -H "Content-Type: application/json" \
   -d '{
     "id_integrante_liga": "juan123",
