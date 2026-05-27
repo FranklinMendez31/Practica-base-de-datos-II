@@ -56,7 +56,7 @@ func main() {
 
 	router.POST("/integrantes", handlers.CrearIntegrante)
 	router.POST("/integrantes/login", handlers.LoginIntegrante)
-	auth.GET("/integrantes", handlers.ListarIntegrantes)
+	router.GET("/integrantes", handlers.ListarIntegrantes)
 	auth.DELETE("/integrantes/:id", handlers.EliminarIntegrante)
 	auth.GET("/integrantes/:id", handlers.ObtenerIntegrantePorID)
 	auth.PUT("/integrantes/:id", handlers.ActualizarIntegrante)
